@@ -26,24 +26,24 @@ export default {
 <style lang="scss" scoped>
 .hamburger-menu-button {
   position: relative;
-  height: 16px;
-  width: 24px;
+  height: 1rem;
+  width: 1.5rem;
   @include transition-ease;
 
   &-burger {
     position: absolute;
     right: 0;
     top: 0.5rem;
-    width: 24px;
-    height: 2px;
+    width: 1.5rem;
+    height: 0.125rem;
     @include transition-ease;
 
     &::before {
       content: "";
       position: absolute;
-      top: -8px;
-      width: 24px;
-      height: 2px;
+      top: -0.5rem;
+      width: 1.5rem;
+      height: 0.125rem;
       background: black;
       border-radius: 9999px;
       @include transition-ease;
@@ -52,9 +52,9 @@ export default {
     &::after {
       content: "";
       position: absolute;
-      top: 8px;
-      width: 16px;
-      height: 2px;
+      top: 0.5rem;
+      width: 1rem;
+      height: 0.125rem;
       background: black;
       border-radius: 9999px;
       @include transition-ease;

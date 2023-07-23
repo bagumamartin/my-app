@@ -23,31 +23,31 @@ module.exports = {
       },
     },
     fontSize: {
-      'heading-1': ['49px', {
+      'heading-1': ['3.052rem', {
         lineHeight: '96px',
         fontWeight: '800',
       }],
-      'heading-2': ['39px', {
+      'heading-2': ['2.441rem', {
         lineHeight: '72px',
         fontWeight: '700',
       }],
-      'heading-3': ['31px', {
+      'heading-3': ['1.953rem', {
         lineHeight: '48px',
         fontWeight: '300',
       }],
-      'heading-4': ['25px', {
+      'heading-4': ['1.563rem', {
         lineHeight: '32px',
         fontWeight: '600',
       }],
-      'heading-5': ['20px', {
+      'heading-5': ['1.25rem', {
         lineHeight: '24px',
         fontWeight: '500',
       }],
-      'heading-6': ['16px', {
+      'heading-6': ['1rem', {
         lineHeight: '16px',
         fontWeight: '500',
       }],
-      'paragraph': ['16px', {
+      'paragraph': ['1rem', {
         lineHeight: '24px',
         fontWeight: '300',
       }]
