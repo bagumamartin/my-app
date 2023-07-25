@@ -1,14 +1,5 @@
 <template>
   <div>
-    <nav>
-      <div
-        class="w-full h-[10vh] py-[0.5rem] px-[2rem] flex justify-between items-center"
-      >
-        <Logo class="w-[2.0625rem] h-[1.9925rem] fill-[#DC143C]" />
-        <Burger />
-      </div>
-    </nav>
-    <div><hr /></div>
     <div class="body px-[2rem]">
       <section
         id="hero"
@@ -17,9 +8,7 @@
         <div class="w-full text-left text-primary text-heading-3 font-poppins">
           <h1 class="">Hello, I'm Baguma</h1>
         </div>
-        <div
-          class="typer w-full text-left text-black text-heading-5 font-poppins"
-        >
+        <div class="typer w-full text-left text-black text-[5vw] font-poppins">
           <p>I am an Applications Developer</p>
         </div>
         <div class="w-full text-center text-black text-paragraph font-lexend">
@@ -95,8 +84,45 @@
           >
             <h3>Past projects</h3>
           </div>
-          <div class="h-[30vh]">
-            <div class="h-[30vh] bg-primary absolute w-[100vw] left-0"></div>
+          <div>
+            <div
+              class="h-[30vh] bg-primary p-[1rem] w-full left-0 grid grid-cols-3 grid-rows-[1fr_0.5fr_1fr]"
+            >
+              <div class="col-start-2 col-span-2 row-start-1 row-span-2">
+                <img
+                  src="@/assets/images/pacedream_hero.png"
+                  alt="Screenshot image of Pacedream's website hero section"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <div class="col-start-1 col-span-2 row-start-2 row-span-3">
+                <img
+                  src="@/assets/images/pacedream_services_section.png"
+                  alt="Screenshot image of Pacedream's website hero section"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="h-[30vh] bg-black-50 p-[1rem] w-full left-0 grid grid-cols-2 grid-rows-1"
+            >
+              <div class="">
+                <img
+                  src="@/assets/images/astromalls_splashscreen.jpg"
+                  alt="Screenshot image of Pacedream's website hero section"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <div class="">
+                <img
+                  src="@/assets/images/astromalls_homepage.jpg"
+                  alt="Screenshot image of Pacedream's website hero section"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -141,27 +167,5 @@
         </div>
       </section>
     </div>
-    <div><hr /></div>
-    <section class="pt-[1.5rem]">
-      <div
-        class="px-[2rem] flex flex-col items-center justify-center gap-y-[1rem]"
-      >
-        <div class="w-full flex items-center justify-center gap-x-[2rem]">
-          <IconLinkedin />
-          <IconWhatsapp />
-          <IconTwitter />
-          <IconFacebook />
-        </div>
-        <div
-          class="w-full flex items-center justify-center gap-x-[1.5rem] text-black text-heading-6 font-poppins"
-        >
-          <p>Privacy Policy</p>
-          <p>Terms & Conditions</p>
-        </div>
-        <div class="w-full text-center text-black text-paragraph text-[0.5rem]">
-          <p>Copyright &copy Baguma Martin 2023 todate. All rights reserved.</p>
-        </div>
-      </div>
-    </section>
   </div>
 </template>
