@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@pinia/nuxt"],
+  modules: ["@pinia/nuxt", "nuxt-icon"],
   css: ["~/assets/style/main.scss"],
   postcss: {
     plugins: {
@@ -14,11 +14,13 @@ export default defineNuxtConfig({
       preprocessorOptions: {
         scss: {
           additionalData: `
-            @use "@/assets/style/_transitions.scss" as *;
-            @use "@/assets/style/_colors.scss" as *;
+          @use "@/assets/style/_transitions.scss" as *;
+          @use "@/assets/style/_colors.scss" as *;
+          @use "@/assets/style/_animations.scss" as *;
             `,
         },
       },
     },
   },
+  generate: { fallback: "404.html" },
 });

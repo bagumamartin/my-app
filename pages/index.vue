@@ -9,21 +9,24 @@
           <h1 class="">Hello, I'm Baguma</h1>
         </div>
         <div class="typer w-full text-left text-black text-[5vw] font-poppins">
-          <p>I am an Applications Developer</p>
+          I am
+          <UtilitiesTyper class="inline" :typing-list="typingList" />
         </div>
         <div class="w-full text-center text-black text-paragraph font-lexend">
           <p>
-            I help businesses implement innovative and user-friendly web, mobile
-            and desktop applications. Get in touch today to discuss your
+            I help organizations implement innovative and user-friendly web,
+            mobile and desktop applications. Get in touch today to discuss your
             project!
           </p>
         </div>
-        <Button
+        <UtilitiesButton
           class="w-full rounded-full from-secondary via-primary to-accent bg-gradient-to-br"
           label="See My Work"
+          icon="ic:outline-arrow-downward"
+          navigation-path="/#my-work"
         />
       </section>
-      <section id="my-work" class="flex flex-col gap-y-[4vh] mb-[8vh]">
+      <section class="flex flex-col gap-y-[4vh] mb-[8vh]">
         <div class="flex flex-col gap-y-[8vh]">
           <div
             class="w-full text-center text-primary text-heading-4 font-poppins"
@@ -78,7 +81,7 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-col gap-y-[4vh]">
+        <div id="my-work" class="flex flex-col gap-y-[4vh]">
           <div
             class="w-full text-center text-primary text-heading-5 font-poppins"
           >
@@ -149,9 +152,10 @@
               </p>
             </div>
           </div>
-          <Button
+          <UtilitiesButton
             class="w-full rounded-full bg-accent"
             label="Got a project in mind? Let's talk"
+            navigation-path="/contact"
           />
           <div class="flex flex-col gap-y-[2vh]">
             <div
@@ -169,3 +173,13 @@
     </div>
   </div>
 </template>
+
+<script setup>
+const typingList = [
+  "an Applications Developer",
+  "a Data Scientist",
+  "a Systems Developer",
+  "a Cybersecurity Analyst",
+  "a Graphics Designer",
+];
+</script>

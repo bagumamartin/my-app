@@ -1,38 +1,40 @@
 <template>
   <div>
-    <header
-      class="w-full h-[10vh] py-[0.5rem] px-[2rem] flex justify-between items-center fixed"
-    >
-      <HeaderLogo class="w-[2.0625rem] h-[1.9925rem] fill-[#DC143C]" />
-      <HeaderBurger class="absolute right-[2rem] z-[9999]" />
-      <nav
-        class="h-[100vh] pt-[10vh] inset-[0_0_0_30%] bg-black-50 backdrop-blur-[1.5rem] fixed transition-[all_1s_ease-in-out]"
-        :class="storeShowMenu.showMenu ? 'translate-x-0' : 'translate-x-full'"
+    <section class="h-[10vh] bg-black-500">
+      <header
+        class="w-full h-[10vh] py-[0.5rem] px-[2rem] flex justify-between items-center fixed bg-white"
       >
-        <div
-          class="h-full pl-[20vw] text-left text-heading-5 text-primary font-poppins flex flex-col gap-y-[3vh] justify-start"
+        <HeaderLogo class="w-[2.0625rem] h-[1.9925rem] fill-[#DC143C]" />
+        <HeaderBurger class="absolute right-[2rem] z-[9999]" />
+        <nav
+          class="h-[100vh] pt-[10vh] inset-[0_0_0_30%] bg-black-50 backdrop-blur-[1.5rem] fixed transition-[all_1s_ease-in-out]"
+          :class="storeShowMenu.showMenu ? 'translate-x-0' : 'translate-x-full'"
         >
-          <NuxtLink to="/" @click="storeShowMenu.toggle"> Home </NuxtLink>
-          <NuxtLink to="/technologies" @click="storeShowMenu.toggle">
-            Technologies
-          </NuxtLink>
-          <NuxtLink to="/about" @click="storeShowMenu.toggle">
-            About me
-          </NuxtLink>
-          <NuxtLink to="/contact" @click="storeShowMenu.toggle">
-            Contact
-          </NuxtLink>
-        </div>
-      </nav>
-    </header>
+          <div
+            class="h-full pl-[20vw] text-left text-heading-5 text-primary font-poppins flex flex-col gap-y-[3vh] justify-start"
+          >
+            <NuxtLink to="/" @click="storeShowMenu.toggle"> Home </NuxtLink>
+            <NuxtLink to="/technologies" @click="storeShowMenu.toggle">
+              Technologies
+            </NuxtLink>
+            <NuxtLink to="/about" @click="storeShowMenu.toggle">
+              About me
+            </NuxtLink>
+            <NuxtLink to="/contact" @click="storeShowMenu.toggle">
+              Contact
+            </NuxtLink>
+          </div>
+        </nav>
+      </header>
+    </section>
     <body>
       <div><hr /></div>
       <div>
         <slot />
       </div>
+      <div><hr /></div>
     </body>
     <footer>
-      <div><hr /></div>
       <section class="pt-[1.5rem]">
         <div
           class="px-[2rem] flex flex-col items-center justify-center gap-y-[1rem]"
